@@ -1,0 +1,78 @@
+cmake_minimum_required(VERSION 3.22)
+project(proj3)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(threads)
+
+add_executable(proj3
+        threads/alarm-multiple.ck
+        threads/alarm-negative.c
+        threads/alarm-negative.ck
+        threads/alarm-priority.c
+        threads/alarm-priority.ck
+        threads/alarm-simultaneous.c
+        threads/alarm-simultaneous.ck
+        threads/alarm-single.ck
+        threads/alarm-wait.c
+        threads/alarm-zero.c
+        threads/alarm-zero.ck
+        threads/alarm.pm
+        threads/Grading
+        threads/Make.tests
+        threads/mlfqs-block.c
+        threads/mlfqs-block.ck
+        threads/mlfqs-fair-2.ck
+        threads/mlfqs-fair-20.ck
+        threads/mlfqs-fair.c
+        threads/mlfqs-load-1.c
+        threads/mlfqs-load-1.ck
+        threads/mlfqs-load-60.c
+        threads/mlfqs-load-60.ck
+        threads/mlfqs-load-avg.c
+        threads/mlfqs-load-avg.ck
+        threads/mlfqs-nice-10.ck
+        threads/mlfqs-nice-2.ck
+        threads/mlfqs-recent-1.c
+        threads/mlfqs-recent-1.ck
+        threads/mlfqs.pm
+        threads/priority-aging.c
+        threads/priority-aging.ck
+        threads/priority-change-2.c
+        threads/priority-change-2.ck
+        threads/priority-change.c
+        threads/priority-change.ck
+        threads/priority-condvar.c
+        threads/priority-condvar.ck
+        threads/priority-donate-chain.c
+        threads/priority-donate-chain.ck
+        threads/priority-donate-lower.c
+        threads/priority-donate-lower.ck
+        threads/priority-donate-multiple.c
+        threads/priority-donate-multiple.ck
+        threads/priority-donate-multiple2.c
+        threads/priority-donate-multiple2.ck
+        threads/priority-donate-nest.c
+        threads/priority-donate-nest.ck
+        threads/priority-donate-one.c
+        threads/priority-donate-one.ck
+        threads/priority-donate-sema.c
+        threads/priority-donate-sema.ck
+        threads/priority-fifo.c
+        threads/priority-fifo.ck
+        threads/priority-lifo.c
+        threads/priority-preempt.c
+        threads/priority-preempt.ck
+        threads/priority-sema.c
+        threads/priority-sema.ck
+        threads/Rubric.alarm
+        threads/Rubric.mlfqs
+        threads/Rubric.priority
+        threads/tests.c
+        threads/tests.h
+        document.docx
+        fixed-point.c
+        fixed-point.h
+        proj3.pdf
+        threads_tests.tar)
